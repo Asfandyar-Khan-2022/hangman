@@ -1,4 +1,7 @@
-# hangman
+# Hangman
+## The function was defined using the def keyword
 
-I am making changes
-even newer changes
+
+
+
+
