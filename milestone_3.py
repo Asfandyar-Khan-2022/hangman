@@ -14,4 +14,4 @@ def check_guess(guess):
 
 check_guess(ask_for_input())
 
-# changes i made
+# newer changes 
