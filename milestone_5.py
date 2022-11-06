@@ -35,10 +35,14 @@ class hangman:
             print(f'You have {self.num_lives} lives left')
             print(self.word_guessed)
             self.num_letters -= 1
+            if self.num_letters == 0:
+                print ('Congratulations. You won the game!')
         else:
             print(f'Sorry, {self.guess} is not in the word. Try again')
             self.num_lives -= 1
             print(f'You have {self.num_lives} lives left')
+            if self.num_lives == 0:
+                print('You lost!')
 
 test = hangman(['apple', 'orange', 'banana', 'grape', 'mango'])
 
