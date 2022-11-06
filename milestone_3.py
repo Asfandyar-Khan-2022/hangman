@@ -1,4 +1,6 @@
-secret_word = 'apple'
+import random
+
+word_list = random.choice(['apple', 'orange', 'banana', 'grape', 'mango'])
 
 def ask_for_input():
     guess = input('Guess a letter: ')
@@ -7,11 +9,9 @@ def ask_for_input():
     return guess
 
 def check_guess(guess):
-    if guess in secret_word:
+    if guess in word_list:
         print(f'Good guess! {guess} is in the word')
     else:
         print(f'Sorry, {guess} is not in the word. Try again')
 
 check_guess(ask_for_input())
-
-# newer changes 
