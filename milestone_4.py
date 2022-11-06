@@ -7,7 +7,9 @@ class hangman:
         self.num_lives = num_lives
         self.num_letters = len(set(self.word)) 
         self.guess = str()
-        self.word_guessed = ['_','_','_','_','_','_','_'][:len(self.word)]
+        self.word_guessed = []
+        for i in range (len(self.word)):
+            self.word_guessed += '_'
 
     def ask_for_input(self):
         list_of_guesses = []
@@ -15,7 +17,7 @@ class hangman:
             self.guess = input('Guess a letter: ')
             while len(self.guess) != 1 or self.guess.isalpha() != True:
                 self.guess = input('Invalid letter. Please, enter a single alphabetical character').lower()
-                
+
             while self.guess in list_of_guesses:
                 self.guess = input('You already tried that letter!')
                 while len(self.guess) != 1 or self.guess.isalpha() != True:
@@ -32,6 +34,7 @@ class hangman:
                 self.word_guessed[i] = self.guess
             print(f'You have {self.num_lives} lives left')
             print(self.word_guessed)
+            self.num_letters -= 1
         else:
             print(f'Sorry, {self.guess} is not in the word. Try again')
             self.num_lives -= 1
