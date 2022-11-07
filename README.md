@@ -3,7 +3,7 @@ The game works by asking the user for an input (letter) and comparing it against
 
 However, if the guessed letter is not correct then the user is promted with 'Sorry, {guess} is not in the word. Try again'. Which results in the user losing a life. The user has a limited number of lives which are set by the user as well. By default the number of lives are set to 5. 
 
-Upon completion of the game the user is congratulated with the promt 'Congratulations. You won the game!' if they win. Otherwise, they are promted with 'You have {num_lives} lives left'
+Upon completion of the game the user is congratulated with the promt 'Congratulations. You won the game!' if they win. Otherwise, they are promted with 'You have {num_lives} lives left'. if the number of lives left is zero then 'You lost!' is shown
 
 ## Code structure 
 
