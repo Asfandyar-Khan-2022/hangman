@@ -17,7 +17,9 @@ Upon completion of the game the user is congratulated with the promt 'Congratula
 
 - Lastly the class object is created. With the object method being called to start the game.
 
-## To start the game simply run the code and enjoy!
+<div align="center">
+To start the game simply run the code and enjoy! 
+
 
 
 
